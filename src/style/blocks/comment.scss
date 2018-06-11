@@ -1,0 +1,61 @@
+.comment {
+
+    &__list {
+        padding: 0;
+        margin: 15px 0;
+        max-height: 140px;
+        border-bottom: 1px solid #f0f0f0;
+        overflow: scroll;
+    }
+
+    &__form {
+        &-field-input {
+            line-height: 34px;
+            border-radius: 17px;
+        }
+
+        &-field-textarea {
+            border-radius: 17px;
+            resize: none;
+            height: 130px;
+            padding: 10px 15px;
+        }
+
+        &-title {
+            @include font($font-family, normal, 500, 16px);
+            color: $secondary;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-bottom: 20px;
+    }
+
+    &__name {
+        @include font($font-family, normal, 500, 16px);
+        color: #4f4f4f;
+        margin-right: 10px;
+    }
+
+    &__place {
+        @include font($font-family, normal, normal, 16px);
+        color: rgba(#4f4f4f, 0.75);
+        margin-right: 10px;
+    }
+
+    &__date {
+        @include font($font-family, normal, normal, 14px);
+        color: rgba(#4f4f4f, 0.75);
+    }
+
+    &__text {
+        @include font($font-family, normal, normal, 15px);
+        color: #4f4f4f;
+        flex-basis: 100%;
+    }
+}

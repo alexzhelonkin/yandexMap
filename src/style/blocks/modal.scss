@@ -1,0 +1,111 @@
+$modal-width: 380px;
+$modal-bg-color: #fff;
+$modal-header-bg-color: $secondary;
+$modal-header-font-size: 12px;
+$modal-main-bg-color: #fff;
+$modal-footer-bg-color: #fff;
+$modal-button-bg-color: $secondary;
+
+.modal {
+    width: $modal-width;
+    position: absolute;
+    max-width: 380px;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-width: 0 1px 1px 1px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    //max-height: 525px;
+    background-color: $modal-main-bg-color;
+
+    &__arrow, &__arrow::after {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+    }
+
+    &__arrow {
+        bottom: -11px;
+        left: 50%;
+        margin-left: -11px;
+        border-top-color: rgba(0,0,0,0.25);
+        border-width: 11px;
+        border-bottom-width: 0;
+    }
+
+    &__arrow::after {
+        bottom: 1px;
+        margin-left: -10px;
+        border-top-color: #fff;
+        border-width: 10px;
+        border-bottom-width: 0;
+        content: "";
+    }
+
+    &__header {
+        height: 45px;
+        background-color: $modal-header-bg-color;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+    }
+
+    &__icon {
+        @include font('FontAwesome', normal, normal, $font-awesome-size);
+        @include centered(y);
+        color: $secondary-font-color;
+        cursor: pointer;
+    }
+
+    &__header-icon-close{
+        right: 15px;
+    }
+
+    &__header-icon-map-marker {
+        left: 15px;
+    }
+
+    &__header-title {
+        @include centered(y);
+        @include font($font-family, normal, 300, $modal-header-font-size);
+        color: $secondary-font-color;
+        padding: 0 35px;
+    }
+
+    &__main {
+        background-color: $modal-main-bg-color;
+        padding: 0 15px;
+    }
+
+    &__footer {
+        background-color: $modal-footer-bg-color;
+        height: 45px;
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0 15px;
+    }
+
+    &__btn {
+        background-color: $modal-button-bg-color;
+        border-radius: 10px;
+        border: none;
+        color: $secondary-font-color;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+::-webkit-scrollbar { width: 3px}
+::-webkit-scrollbar-button {  background-color: transparent; }
+::-webkit-scrollbar-track {  background-color: transparent; }
+::-webkit-scrollbar-track-piece { background-color: #ffffff; }
+::-webkit-scrollbar-thumb { height: 80px; background-color: $primary-dark; border-radius: 3px; }
+::-webkit-scrollbar-corner { background-color: transparent; }
+::-webkit-resizer { background-color: transparent; }

@@ -1,0 +1,22 @@
+<div class="modal">
+    <div class="modal__arrow"></div>
+    <header class="modal__header">
+        <i class="modal__icon modal__header-icon-map-marker">&#xf041;</i>
+        <span class="modal__header-title">{{address}}</span>
+        <i id="modal-close" class="modal__icon modal__header-icon-close">&#xf00d;</i>
+    </header>
+    <form action="" id="comment-form" name="comment" method="POST" class="comment__form form">
+    <main class="modal__main comment">
+        <ul class="comment__list">
+            $[[options.contentLayout observeSize minWidth=345 maxWidth=345]]
+        </ul>
+        <div class="comment__form-title">Ваш отзыв</div>
+        <input class="form__field comment__form-field-input" type="text" name="name" placeholder="Ваше имя" required>
+        <input class="form__field comment__form-field-input" type="text" name="place" placeholder="Укажите место" required>
+        <textarea class="form__field comment__form-field-textarea" name="text" placeholder="Поделитесь впечатлениями" required></textarea>
+    </main>
+    <footer class="modal__footer">
+        <input type="submit" id="button-save" class="modal__btn" value="Добавить">
+    </footer>
+    </form>
+</div>

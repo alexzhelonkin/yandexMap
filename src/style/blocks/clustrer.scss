@@ -1,0 +1,28 @@
+.cluster {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+
+    &__place {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__address {
+        display: block;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+    }
+
+    &__date {
+        align-self: flex-end;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 5px;
+    }
+}
