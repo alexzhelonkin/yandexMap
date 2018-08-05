@@ -1,10 +1,10 @@
-## LoftSchool example project
+## LoftSchool project
 
-### Доступные команды
+### commands
 
-* `npm install` - установить зависимости
-* `npm run prepare` - запустить тесты и проверить стиль кода
-* `npm run test` - запустить тесты
-* `npm run codestyle` - проверить стиль кода
-* `npm run start` - запустить встроенный сервер и следить за изменениями файлов
-* `npm run build` - собрать проект в папку `build`
+* `npm install` - establish dependencies
+* `npm run prepare` - run tests and check code style
+* `npm run test` - run tests
+* `npm run codestyle` - check code style
+* `npm run start` - run the embedded server and monitor file changes
+* `npm run build` - build the project in the `build` folder
